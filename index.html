@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- embed stylesheet using link tag -->
+    <link rel="stylesheet" href="style.css">
+    <title>Basic Variable and Function</title>
+  </head>
+  <body>
+    <main class="container">
+      <section id="data">
+        <div class="card">
+          <img id="data-avatar" src="img/avatar.png" alt="user avatar">
+          <h1 id="data-name">Lorem Ipsum</h1>
+          <p id="data-birth">Tangerang Selatan, 13 Mei 1998</p>
+          <p id="data-age">23 years old</p>
+          <div class="data-group">
+            <img src="img/gender.png">
+            <span id="data-gender">Male</span>
+          </div>
+          <div class="data-group">
+            <img src="img/email.png">
+            <span id="data-email">lorem@dumbways.id</span>
+          </div>
+          <div class="data-group">
+            <img src="img/phone.png">
+            <span id="data-phone">08123123234</span>
+          </div>
+          <div class="data-group">
+            <img src="img/address.png">
+            <span id="data-address">
+              Jl. Elang IV, Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan, Banten 15413
+            </span>
+          </div>
+        </div>
+      </section>
+      <section id="form-input">
+        <form>
+          <h1 class="form-title">Please fill your data</h1>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="example: Jhon Doe" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="placeOfBirth">Place of Birth</label>
+            <input type="text" id="placeOfBirth" placeholder="example: Southampton" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="dateOfBirth">Born Date</label>
+            <input type="date" id="dateOfBirth" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="example: +6281234567899" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" cols="50" rows="2" placeholder="Where do you live?" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example: jhondoe@gmail.com" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar" class="form-control" required>
+          </div>
+          <div class="button-group">
+            <button class="submit" onclick="submitForm(event)">Submit</button>
+            <button class="reset" onclick="resetForm(event)">Reset</button>
+          </div>
+        </form>
+      </section>
+      <script src="index.js"></script>
+    </main>
+  </body>
+</html>
